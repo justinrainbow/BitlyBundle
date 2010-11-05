@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://www.symfony-project.org/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.symfony-project.org/schema/dic/services http://www.symfony-project.org/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="bitly.api.class">Bitly</parameter>
+        <parameter key="bitly.api.login">null</parameter>
+        <parameter key="bitly.api.api_key">null</parameter>
+    </parameters>
+
+    <services>
+        <service id="bitly" class="%bitly.api.class%">
+            <argument>%bitly.api.login%</argument>
+            <argument>%bitly.api.api_key%</argument>
+        </service>
+    </services>
+    
+</container>
