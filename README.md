@@ -3,7 +3,7 @@ Installation
 
   1. Add this bundle and Tijs Verkoyen's Bitly class to your project :
 
-          $ git submodule add git@github.com:popofr13/BitlyBundle.git src/Bundle/BitlyBundle
+          $ git submodule add git://github.com/popofr13/BitlyBundle.git src/Bundle/BitlyBundle
           $ wget http://classes.verkoyen.eu/modules/bitly/files/php_bitly_2_0_1.zip => extract and copy bitly.php to src/vendor/bitly/Bitly.php
 
   2. Add the `Bitly` class to your project's autoloader bootstrap script:
